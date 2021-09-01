@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Latihan AJAX Javascript</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Latihan ajax</h1>
+
+
+    <script>
+        function load_ajax() {
+            // memanggil object ajax yg tertanam di browser dan di taruh dalam suatu variabel
+            const ajax = new XMLHttpRequest();
+
+            /* memanggil metode open dari ajax
+                ada 3 parameter :
+                1. GET >> mengambil data || POST >> untuk mentransfer
+                2. url atau sumber file-nya
+                3. true = asynchronous || false = synchronous
+            */
+            ajax.open('GET', 'src/data.json', true)
+        }
+
+        load_ajax();
+    </script>
 </body>
 </html>
