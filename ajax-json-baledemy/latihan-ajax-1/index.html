@@ -8,11 +8,12 @@
     <style>
         body {
             font-family: sans-serif;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Latihan ajax</h1>
+    <h1>Latihan ajax vanila javascript (javascript murni)</h1>
 
 
     <script>
@@ -26,7 +27,12 @@
                 2. url atau sumber file-nya
                 3. true = asynchronous || false = synchronous
             */
-            ajax.open('GET', 'src/data.json', true)
+            ajax.open('GET', 'src/data.json', true);
+
+            // uji terlebih dahulu
+            ajax.onreadystatechange = function() {
+
+            }
         }
 
         load_ajax();
