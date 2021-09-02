@@ -16,6 +16,8 @@
     <h1>Latihan ajax vanila javascript (javascript murni)</h1>
     <br>
     <p></p>
+    <br>
+    <li>Nama : <span></span></li>
 
 
     <script>
@@ -36,10 +38,16 @@
                 // apakah berhasil atau tidak cek dengan if readyState dan status nya
                 if(this.readyState === 4 && this.status === 200) {
                     let pesan = document.querySelector('p');
+                    let li = document.querySelector('span');
                     pesan.innerText = 'ajax telah berhasil!';
                     
                     // menampilkan isi data dari json dengan responseText
                     console.log(this.responseText);
+
+                    // mengubah json ke object dengan JSON.parse()
+                    let data = JSON.parse(this.responseText);
+                    console.log(data);
+                    li.innerText = data.nama;
                 }
             }
 
