@@ -14,6 +14,8 @@
 </head>
 <body>
     <h1>Latihan ajax vanila javascript (javascript murni)</h1>
+    <br>
+    <p></p>
 
 
     <script>
@@ -31,8 +33,18 @@
 
             // uji terlebih dahulu
             ajax.onreadystatechange = function() {
-
+                // apakah berhasil atau tidak cek dengan if readyState dan status nya
+                if(this.readyState === 4 && this.status === 200) {
+                    let pesan = document.querySelector('p');
+                    pesan.innerText = 'ajax telah berhasil!';
+                    
+                    // menampilkan isi data dari json dengan responseText
+                    console.log(this.responseText);
+                }
             }
+
+            // mengirimkan sebuah request
+            ajax.send();
         }
 
         load_ajax();
