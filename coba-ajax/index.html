@@ -11,11 +11,39 @@
 <body>
     <h1>Coba Ajax</h1>
 
+    <button>KLIK</button>
+
+    <p></p>
+
     <script>
         $(document).ready(function() {
             function ajaxx() {
-                
+                const ajax = new XMLHttpRequest();
+
+                ajax.open('GET', 'data.json', true);
+
+                ajax.onreadystatechange = function() {
+
+                    if( this.readyState === 4 && this.status === 200 ) {
+                        let data = this.responseText;
+    
+                        // data.map( (da) => {
+                        //     $('p').html(da)
+                        // } )
+                        
+                        console.log(data);
+
+                    }
+
+
+                };
+
+                ajax.send();
             }
+
+            $('button').click(function() {
+                ajaxx();
+            });
         });
     </script>
 </body>
