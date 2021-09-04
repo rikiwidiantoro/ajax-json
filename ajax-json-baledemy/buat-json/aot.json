@@ -1,0 +1,22 @@
+[
+    {
+        "nama" : "Eren Yeager",
+        "umur" : 25,
+        "mati" : false,
+        "teman" : ["mikasa", "armin"],
+        "detail" : {
+            "misi" : "menghancurkan musuh",
+            "karakter" : "dingin"
+        }
+    },
+    {
+        "nama" : "Eren Yeager",
+        "umur" : 25,
+        "mati" : false,
+        "teman" : ["mikasa", "armin"],
+        "detail" : {
+            "misi" : "menghancurkan musuh",
+            "karakter" : "dingin"
+        }
+    }
+]
