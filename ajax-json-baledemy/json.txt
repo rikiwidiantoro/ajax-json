@@ -1,12 +1,19 @@
-JSON
-
+JSON :
 1. pertukaran data
 2. pasangan key dan value
 3. sintaks mudah dibaca
 4. formatnya object javascript
 5. ekstensi .json
 
-Object Javascript
 
+Object Javascript :
 1. kumpulan properti
 2. properti di tulis dalam bentuk pasangan key dan value
+
+
+Tipe data / value JSON :
+1. String
+2. Number
+3. Boolean
+4. Array
+5. Null
