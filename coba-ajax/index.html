@@ -13,7 +13,8 @@
 
     <button>KLIK</button>
 
-    <p></p>
+    <p>Nama : <span id="nama"></span></p>
+    <p>Alamat : <span id="alamat"></span></p>
 
     <script>
         $(document).ready(function() {
@@ -25,11 +26,10 @@
                 ajax.onreadystatechange = function() {
 
                     if( this.readyState === 4 && this.status === 200 ) {
-                        let data = this.responseText;
+                        let data = JSON.parse(this.responseText);
     
-                        // data.map( (da) => {
-                        //     $('p').html(da)
-                        // } )
+                        $('#nama').text(data[0].nama);
+                        $('#alamat').text(data[0].alamat);
                         
                         console.log(data);
 
