@@ -47,4 +47,6 @@ $(document).ready(function() {
 });
 
 
-
+// CATATAN PENTING!!
+// pada metode mengambil data menggunakan ajax jQuery dengan getJSON() => hasil dari data langsung dalam bentuk objek sehingga tidak perlu parsing,
+// jika menggunakan ajax vanila javascript => hasil dari responseText / data masih dalam bentuk JSON sehingga perlu di ubah menjadi objek dengan method JSON.parse()
