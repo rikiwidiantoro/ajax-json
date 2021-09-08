@@ -33,14 +33,14 @@ $(document).ready(function() {
             // // console.log(index);
             // console.log(menus[1].nama);
             $.each(menus, function(index, menu) {
-                // console.log(menu.nama);
+                console.log(index+1 + '. ' + menu.nama);
 
                 // pengulangan
-                for( index = 0; index < index.length; index++ ) {
-                    console.log(index);
-                }
+                
 
-                let data = `
+                let data;
+
+                data += `
                         <div class="card">
                             <div class="card-header">
                                 ${menu.nama}
@@ -53,6 +53,8 @@ $(document).ready(function() {
                             </div>
                         </div>
                     `
+
+
                     $('.row1').html(
                         `
                             <div class="col-sm-4 text-center mt-2">
