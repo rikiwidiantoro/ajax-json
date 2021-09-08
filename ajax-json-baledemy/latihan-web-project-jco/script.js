@@ -36,9 +36,8 @@ $(document).ready(function() {
                 // console.log(menu.nama);
 
                 // pengulangan
-                let i = index;
-                for( i = 1; i <= menu.length; i++ ) {
-                    console.log(i);
+                for( index = 0; index < index.length; index++ ) {
+                    console.log(index);
                 }
 
                 let data = `
