@@ -55,11 +55,21 @@ $(document).ready(function() {
 
                 // $('.row1').append(divCol);
 
-
                 
                 $('.row1').append(
                     `
                         <div class="col-sm-4 text-center mt-2">
+                            <div class="card">
+                                <div class="card-header">
+                                    ${menu.nama}
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/${menu.gambar}" alt="${menu.nama}" width="200">
+                                    <p><strong class="badge badge-warning"><h5>${menu.kategori}</h5></strong></p>
+                                    <p class="card-text">${menu.deskripsi}</p>
+                                    <a href="#" class="btn btn-primary">See Detail</a>
+                                </div>
+                            </div>
                             <div class="card">
                                 <div class="card-header">
                                     ${menu.nama}
