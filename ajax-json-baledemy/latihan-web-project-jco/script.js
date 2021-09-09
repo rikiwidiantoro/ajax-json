@@ -35,9 +35,10 @@ $(document).ready(function() {
             $.each(menus, function(index, menu) {
                 console.log(index+1 + '. ' + menu.nama);
 
-                // pengulangan
-                
-                // let data = `
+                // let divCol = `<div class="col-sm-4 text-center mt-2"></div>`
+
+                // $(divCol).append(
+                //     `
                 //         <div class="card">
                 //             <div class="card-header">
                 //                 ${menu.nama}
@@ -50,25 +51,29 @@ $(document).ready(function() {
                 //             </div>
                 //         </div>
                 //     `
+                // )
+
+                // $('.row1').append(divCol);
 
 
-                    $('.row1').html(
-                        `
-                            <div class="col-sm-4 text-center mt-2">
-                                <div class="card">
-                                    <div class="card-header">
-                                        ${menu.nama}
-                                    </div>
-                                    <div class="card-body">
-                                        <img src="images/${menu.gambar}" alt="${menu.nama}" width="200">
-                                        <p><strong class="badge badge-warning"><h5>${menu.kategori}</h5></strong></p>
-                                        <p class="card-text">${menu.deskripsi}</p>
-                                        <a href="#" class="btn btn-primary">See Detail</a>
-                                    </div>
+                
+                $('.row1').append(
+                    `
+                        <div class="col-sm-4 text-center mt-2">
+                            <div class="card">
+                                <div class="card-header">
+                                    ${menu.nama}
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/${menu.gambar}" alt="${menu.nama}" width="200">
+                                    <p><strong class="badge badge-warning"><h5>${menu.kategori}</h5></strong></p>
+                                    <p class="card-text">${menu.deskripsi}</p>
+                                    <a href="#" class="btn btn-primary">See Detail</a>
                                 </div>
                             </div>
-                        `
-                    )
+                        </div>
+                    `
+                )
 
 
                 
