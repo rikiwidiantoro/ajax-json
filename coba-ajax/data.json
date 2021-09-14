@@ -8,5 +8,10 @@
         "nama" : "Eren Yeager",
         "umur" : 30,
         "alamat" : "Distrik Shingashina"
+    },
+    {
+        "nama" : "Mikasa Ackerman",
+        "umur" : 28,
+        "alamat" : "Distrik Shingashina"
     }
 ]
